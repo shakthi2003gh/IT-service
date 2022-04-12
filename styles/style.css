@@ -50,3 +50,32 @@ h3 {
 .button--primary:hover {
   background-color: #3c48f1;
 }
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 426px) {
+  .grid--common {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--brand {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .grid--2x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--brand {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
