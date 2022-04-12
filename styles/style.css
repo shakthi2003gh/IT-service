@@ -1,1 +1,31 @@
 @import "/styles/normalize.css";
+
+:root {
+  --color-primary: #2735ea;
+  --color-bg-block: #292d33;
+}
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Typography */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.font--different {
+  font-family: "Montserrat", sans-serif;
+}
