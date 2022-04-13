@@ -2,6 +2,7 @@
 
 :root {
   --color-primary: #2735ea;
+  --color-secondary: #bdb6b4;
   --color-dark-bg-block: #292d33;
   --color-light-bg-block: #f5f5f5;
 }
@@ -19,6 +20,7 @@ html {
 /* Typography */
 body {
   font-family: "Open Sans", sans-serif;
+  line-height: 1.6rem;
 }
 
 h1,
@@ -38,6 +40,7 @@ h3 {
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: 100;
+  margin: 0 auto;
   padding: 11px 27px;
   text-decoration: none;
   text-transform: uppercase;
@@ -125,4 +128,103 @@ h3 {
 
 .media__content {
   font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 5rem;
+  padding: 2.4rem;
+}
+
+.card__image {
+  border-radius: 100px;
+  width: 150px;
+  align-self: center;
+}
+
+/*                                    feature type */
+.card--feature {
+  text-align: center;
+}
+
+.card--feature .card__image {
+  transform: translateY(-5rem);
+  border: 5px solid white;
+  box-shadow: 4px 4px 20px -7px black;
+}
+
+.card--feature .card__title {
+  margin-top: -4rem;
+  font-size: 2rem;
+}
+
+.card--feature .card__description {
+  margin-top: -2rem;
+}
+
+/*                                       team type */
+.member__image {
+  align-self: center;
+}
+
+.member__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card--team .card__title {
+  margin-top: 2rem;
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+}
+
+.card__member-name {
+  color: var(--color-primary);
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.card--team .card__description {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  max-width: 350px;
+}
+
+.card__social-plugins {
+  display: flex;
+  gap: 2rem;
+}
+
+.card__social-plugins .icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 426px) {
+  .card--team {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card--team {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .card--team {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
