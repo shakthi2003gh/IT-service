@@ -101,11 +101,12 @@ h3 {
 
 /* Media */
 .media {
-  margin: 0;
+  margin: 1rem;
+  background-color: white;
   display: flex;
   padding: 3rem 1.5rem;
   gap: 1.5rem;
-  height: 160px;
+  max-height: fit-content;
 }
 
 .media__icon {
@@ -123,7 +124,6 @@ h3 {
 
 .media__heading {
   font-size: 1.8rem;
-  margin-top: 1rem;
 }
 
 .media__content {
@@ -378,4 +378,14 @@ h3 {
   .hero__description {
     max-width: 600px;
   }
+}
+
+/* Media block */
+.media-block {
+  margin: 1rem 4rem;
+  max-width: fit-content;
+}
+
+.media-block .media {
+  max-width: 36rem;
 }
