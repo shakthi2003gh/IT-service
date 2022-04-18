@@ -183,6 +183,10 @@ h3 {
 }
 
 /*                                       team type */
+.card--team {
+  text-align: left;
+}
+
 .member__image {
   align-self: center;
 }
@@ -190,6 +194,9 @@ h3 {
 .member__description {
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 3ch;
   gap: 1.5rem;
 }
 
