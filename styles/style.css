@@ -139,18 +139,20 @@ h3 {
 
 /* Cards */
 .card {
+  color: black;
   background-color: white;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin: 5rem;
+  margin: 5rem 2.5rem 1rem;
   padding: 2.4rem;
 }
 
 .card__image {
   border-radius: 100px;
   width: 150px;
+  height: 150px;
   align-self: center;
 }
 
@@ -443,4 +445,15 @@ h3 {
 .rank__description {
   font-size: 1.5rem;
   color: var(--color-dark-bg-block);
+}
+
+/* Feature block */
+.feature__heading {
+  font-size: 3rem;
+  line-height: 2ch;
+}
+
+.feature__description {
+  font-size: 1.6rem;
+  line-height: 2.5ch;
 }
