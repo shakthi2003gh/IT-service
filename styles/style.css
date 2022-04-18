@@ -516,3 +516,22 @@ h3 {
 .brand-block img {
   width: 80%;
 }
+
+/* location block */
+.location-block {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.location {
+  margin-top: 1rem;
+  font-size: 5rem;
+  line-height: 2.5ch;
+}
+
+.location::after {
+  content: "_____";
+  color: var(--color-primary);
+  font-size: 8rem;
+}
