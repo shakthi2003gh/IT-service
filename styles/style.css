@@ -511,3 +511,8 @@ h3 {
   background-color: var(--color-primary);
   border-radius: 10rem;
 }
+
+/* Brand block */
+.brand-block img {
+  width: 80%;
+}
