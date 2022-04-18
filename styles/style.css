@@ -70,6 +70,12 @@ h3 {
   }
 }
 
+@media screen and (min-width: 550px) {
+  .grid--tflex {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .grid--2x3 {
     grid-template-columns: repeat(3, 1fr);
@@ -456,4 +462,45 @@ h3 {
 .feature__description {
   font-size: 1.6rem;
   line-height: 2.5ch;
+}
+
+/* Testimonial and description block */
+/*                                                   Testimonial section */
+.testimonial-block {
+  padding: 0 3rem;
+}
+
+.testimonial__heading {
+  font-size: 3.5rem;
+}
+
+.testimonial__description {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  line-height: 2.5ch;
+}
+
+.testimonial__image {
+  width: 100%;
+  height: 25rem;
+  max-width: 20rem;
+}
+/*                                                   description section */
+.description-block {
+  align-items: center;
+  color: var(--color-dark-bg-block);
+  display: flex;
+  font-size: 1.6rem;
+  height: 100%;
+  line-height: 3ch;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.description__icon {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--color-primary);
+  border-radius: 10rem;
 }
