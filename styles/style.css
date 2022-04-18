@@ -92,7 +92,6 @@ h3 {
 
 /* Blocks */
 .block {
-  /* TODO: margin: 6rem;*/
   text-align: center;
 }
 
@@ -404,8 +403,9 @@ h3 {
 
 /* Media block */
 .media-block {
-  margin: 1rem 4rem;
+  margin: 1rem 4rem -10rem;
   max-width: fit-content;
+  transform: translateY(-10rem);
 }
 
 /* solution and rank block */
@@ -512,9 +512,17 @@ h3 {
   border-radius: 10rem;
 }
 
+/* team block */
+.team__heading {
+  font-size: 3rem;
+  line-height: 2ch;
+}
+
 /* Brand block */
 .brand-block img {
   width: 80%;
+  justify-self: center;
+  align-self: center;
 }
 
 /* location block */
